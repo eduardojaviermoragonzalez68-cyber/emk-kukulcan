@@ -1,1 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio Mora Kukulcan - EMK</title>
+    
+    <!-- CONEXIÓN A BOOTSTRAP 5 -->
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    
+    <!-- ESTILOS PERSONALIZADOS PREMIUM EMK -->
+    <style>
+        body {
+            background-color: #0b0c10;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .navbar .nav-link:hover {
+            color: #ffffff !important;
+            transition: color 0.3s ease;
+        }
+        .active-link {
+            color: #ffffff !important;
+            border-bottom: 2px solid #ffdd00;
+        }
+        .text-neon {
+            color: #ffdd00;
+            text-shadow: 0 0 15px rgba(255, 221, 0, 0.4);
+        }
+        .border-neon {
+            border: 2px solid #ffdd00 !important;
+        }
+        .fs-7 { font-size: 0.85rem; }
+        .fs-8 { font-size: 0.7rem; }
+        
+        /* Ajustes de los contenedores de video */
+        .video-card {
+            background-color: #151a21 !important;
+            transition: transform 0.3s ease;
+        }
+        .video-card:hover {
+            transform: translateY(-5px);
+        }
+        select.form-select optgroup {
+            background-color: #151a21;
+            color: #ffdd00;
+            font-weight: bold;
+        }
+        select.form-select option {
+            background-color: #0b0c10;
+            color: #ffffff;
+        }
+        .accordion-button::after {
+            filter: invert(1);
+        }
+        .accordion-button:not(.collapsed) {
+            color: #ffdd00 !important;
+            background-color: transparent !important;
+            box-shadow: none !important;
+        }
+    </style>
+</head>
+<body>
 
+    <!-- 1. MENÚ DE NAVEGACIÓN -->
+    <nav class="navbar navbar-expand-lg sticky-top shadow-sm" style="background-color: #111; border-bottom: 1px solid #222;">
+        <div class="container-fluid px-3">
+            <a class="navbar-brand text-white fw-bold" href="#inicio">
+                EMK <span class="fs-7 fw-normal text-warning">Diseño</span>
+            </a>
+            <button class="navbar-toggler border-0 text-white" type="button" data-bs-toggle="collapse" data-bs-target="#menuEMK">
+                <span class="navbar-toggler-icon" style="filter: invert(1);"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="menuEMK">
+                <div class="navbar-nav pt-2 pt-lg-0">
+                    <a class="nav-link text-white-50 fw-semibold px-3 py-2 text-uppercase fs-7 active-link" href="#inicio">Inicio</a>
+                    <a class="nav-link text-white-50 fw-semibold px-3 py-2 text-uppercase fs-7" href="#videos">Videos</a>
+                    <a class="nav-link text-white-50 fw-semibold px-3 py-2 text-uppercase fs-7" href="#cotizar">Cotizar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. PRESENTACIÓN PRINCIPAL (HERO) -->
+    <div class="container text-center my-5 px-4" id="inicio">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8 text-white">
+                <h1 class="fw-black text-uppercase text-neon mb-1 display-5 fw-bold">
+                    Estudio Mora Kukulcan
+                </h1>
+                <p class="text-uppercase fw-bold fs-6 tracking-widest text-white-50 mb-5">
+                    EMK — Diseño Gráfico de Alto Impacto
+                </p>
+                
+                <div class="card bg-transparent border-neon rounded-4 p-4 text-start mb-5 shadow">
+                    <div class="card-body p-2">
+                        <h2 class="text-center fw-bold text-uppercase mb-4 text-neon fs-4">¡Bienvenido!</h2>
+                        <p class="fs-6 lh-lg mb-4">
+                            Soy <strong class="text-warning">Eduardo Mora</strong>, creador de <strong>ESTUDIO MORA KUKULCAN - EMK</strong>. Inspirado en los mejores estudios del mundo: <em>Studio & More, Lynx & Co, Kanyegg y Beeple</em> de mi investigación en Wix.
+                        </p>
+                        <p class="fs-6 lh-lg mb-4">
+                            Especialista en <span class="badge bg-warning text-dark px-2.5 py-1.5 fw-bold">playeras polo bordadas 100% algodón</span>, logos Kukulkán y <strong class="text-warning">branding de alto impacto</strong>. Herramientas: Canva, GIMP, Inkscape, Freepik, Flaticon.
+                        </p>
+                        <div class="text-center mt-4">
+                            <p class="fst-italic fw-bold text-uppercase m-0 fs-5 text-neon">
+                                ¡Cada diseño lleva poder, identidad y cultura maya!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3. SECCIÓN DE PORTAFOLIO EN VIDEO (4 VIDEOS) -->
+    <div class="container my-5 px-3" id="videos">
+        <div class="mb-4 text-center text-md-start">
+            <h3 class="text-uppercase fw-bold m-0 text-neon fs-4">Videos de Presentación</h3>
+            <p class="text-muted small text-uppercase tracking-wider">Conoce la calidad de nuestros trabajos en acción</p>
+        </div>
+
+        <div class="row g-4">
+            <!-- Video 1 -->
+            <div class="col-12 col-md-6">
+                <div class="card video-card h-100 border-0 rounded-4 overflow-hidden shadow">
+                    <div class="ratio ratio-16x9 bg-black">
+                        <!-- Coloca tu enlace embed aquí -->
+                        <iframe src="ENLACE_EMBED_VIDEO_1" title="Polo Bordado EMK" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body bg-dark text-center p-3" style="background-color: #0b0c10 !important;">
+                        <span class="badge bg-warning text-dark text-uppercase fw-bold px-3 py-2 rounded-pill fs-7">🎬 Video 1 - Polo Bordado EMK</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Video 2 -->
+            <div class="col-12 col-md-6">
+                <div class="card video-card h-100 border-0 rounded-4 overflow-hidden shadow">
+                    <div class="ratio ratio-16x9 bg-black">
+                        <iframe src="ENLACE_EMBED_VIDEO_2" title="Colección EMK" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body bg-dark text-center p-3" style="background-color: #0b0c10 !important;">
+                        <span class="badge bg-warning text-dark text-uppercase fw-bold px-3 py-2 rounded-pill fs-7">🎬 Video 2 - Colección EMK</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Video 3 -->
+            <div class="col-12 col-md-6">
+                <div class="card video-card h-100 border-0 rounded-4 overflow-hidden shadow">
+                    <div class="ratio ratio-16x9 bg-black">
+                        <iframe src="ENLACE_EMBED_VIDEO_3" title="Diseño Kukulkán" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body bg-dark text-center p-3" style="background-color: #0b0c10 !important;">
+                        <span class="badge bg-warning text-dark text-uppercase fw-bold px-3 py-2 rounded-pill fs-7">🎬 Video 3 - Diseño Kukulkán</span>
+                    </div>
+                </div>
+            </div>
+            <!-- Video 4 -->
+            <div class="col-12 col-md-6">
+                <div class="card video-card h-100 border-0 rounded-4 overflow-hidden shadow">
+                    <div class="ratio ratio-16x9 bg-black">
+                        <iframe src="ENLACE_EMBED_VIDEO_4" title="Nuevo 2026" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div class="card-body bg-dark text-center p-3" style="background-color: #0b0c10 !important;">
+                        <span class="badge bg-warning text-dark text-uppercase fw-bold px-3 py-2 rounded-pill fs-7">🎬 Video 4 - Nuevo 2026</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 4. COTIZADOR COMPLETO CON CONEXIÓN A WHATSAPP -->
+    <div class="container my-5 px-3" id="cotizar">
+        <div class="card border-0 rounded-4 overflow-hidden shadow" style="background-color: #151a21;">
+            <div class="p-4 text-center" style="background-color: #ffdd00;">
+                <h4 class="m-0 fw-bold text-dark text-uppercase fs-5 tracking-wide">Cotiza tu Proyecto o Campaña</h4>
+                <small class="text-dark fw-semibold text-uppercase tracking-wider fs-8">Soluciones Textiles, Impresión Publicitaria y Diseño Digital</small>
+            </div>
+            <div class="card-body p-4 text-white">
+                <!-- Reemplaza el número de teléfono por el tuyo incluyendo el código de país (Ej: 529991234567) -->
+                <form action="https://wa.me" method="GET" target="_blank">
+                    <div class="mb-4">
+                        <label class="form-label small text-uppercase fw-semibold text-warning tracking-wide">1. ¿Qué servicio necesitas?</label>
+                        <select name="text" class="form-select bg-dark text-white border-secondary py-2.5 fs-6" required>
+                            <option selected disabled value="">Selecciona un servicio...</option>
+                            <optgroup label="🧵 BORDADO TEXTIL DE ALTA CALIDAD">
+                                <option value="Hola EMK, solicito cotización de Bordado en Gorras">Bordado en Gorras</option>
+                                <option value="Hola EMK, solicito cotización de Bordado en Camisas/Playeras">Bordado en Camisas y Playeras</option>
