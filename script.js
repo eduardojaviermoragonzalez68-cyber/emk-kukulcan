@@ -1,0 +1,1 @@
+function enviarW(e){e.preventDefault();const s=document.getElementById('serv').value;const c=document.getElementById('cant').value;const n=document.getElementById('nom').value;window.open(`https://wa.me/529997646962?text=${encodeURIComponent(`Hola EMK soy ${n} quiero ${s} cant ${c}`)}`,'_blank')}
